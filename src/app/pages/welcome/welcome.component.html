@@ -1,0 +1,56 @@
+<div nz-row>
+  <div nz-col nzSpan="12">
+    <h1>Hi Marie</h1>
+    <a>Good morning</a>
+    <h2 style="margin-top: 20px; margin-bottom: 50px;">Chào mừng bạn đến với Mobimeeting, hãy bắt đầu với những kế hoạch
+      sắp tới của bạn.</h2>
+
+    <app-cardfunctionmod></app-cardfunctionmod>
+  </div>
+  <!-- <nz-divider nzType="vertical"></nz-divider> -->
+
+  <div nz-col nzSpan="12">
+    <div nz-row>
+      <div nz-col nzSpan="12">
+        <h1 style="font-size: 45px;margin-top: -20px;">09 : 32</h1>
+        <p style="color: #aba187; margin-top: -30px;">Thứ 3, ngày 03, tháng 02, năm 2022</p>
+        <div style="display: flex; padding-top: 100px;">
+          <div><i nz-icon nzType="bell" nzTheme="fill"></i></div>
+          <div style="margin-left: 10px;">
+            <p style="margin-bottom: -2px;">Bạn có cuộc họp lúc 10:30</p>
+            <a>Xem chi tiết</a>
+          </div>
+        </div>
+        <div style="display: flex;margin-top: 8px;">
+          <div><i nz-icon nzType="bell" nzTheme="outline"></i></div>
+          <div style="margin-left: 10px;">
+            <p>Lời mời tham dự cuộc họp "<span style="font-weight: bold;">Họp thiết kế Mobimeeting</span>"</p>
+          </div>
+        </div>
+      </div>
+      <div nz-col nzSpan="12">
+        <div style="width: 300px; border: 1px solid #d9d9d9; border-radius: 4px;">
+          <nz-calendar nzFullscreen="false"></nz-calendar>
+        </div>
+      </div>
+    </div>
+    <div nz-row style="margin-top: 5px;">
+      <span style="font-size: 18px; font-weight: bold;">Cuộc họp gần đây <nz-tag>04</nz-tag></span>
+    </div>
+    <div nz-row style="margin-top: 5px; margin-bottom: 10px;">
+      <div nz-col nzSpan="18">
+        <nz-input-group style="border-radius: 5px;"  [nzPrefix]="prefixTemplateUser">
+          <ng-template #prefixTemplateUser><i nz-icon nzType="search"></i></ng-template>
+          <input type="text" nz-input placeholder="Tìm kiếm" />
+        </nz-input-group>
+      </div>
+      <div nz-col nzSpan="6">
+        <nz-select ngModel="now" style="width: 100%; padding-left: 5px;" nzPlaceHolder="Tuần này">
+          <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+          <nz-option nzValue="now" nzLabel="Tuần này"></nz-option>
+        </nz-select>
+      </div>
+    </div>
+    <app-listwork></app-listwork>
+  </div>
+</div>
